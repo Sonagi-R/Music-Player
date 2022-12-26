@@ -46,10 +46,15 @@ h2{
     padding-top: 0.4rem;
     font-size: 1rem;
     font-weight: 200;
-    color: #EB2045;
+    color: rgb(184,40,112);
     margin-bottom: 1rem;
     text-align: center;
 }
+
+input[type='range']{
+    accent-color:rgb(184,40,112);
+}
+
 
 .content{
     width: 18vw;
@@ -74,7 +79,7 @@ h2{
 }
 
 .active{
-    background: linear-gradient(to right, lightgrey 50%, #EB2045 50%) left;
+    background: linear-gradient(to right, lightgrey 50%, rgb(184,40,112) 50%) left;
     background-size: 200% 100%;
     background-position: -100% 0;
     transition: all 242s ease-out;
@@ -114,7 +119,9 @@ border-radius: 100%;
     width: 120px; 
     margin-left: 30px;
     border-radius: 5px;
-    color: black;
+    background-color: rgb(184,40,112);
+    color: white;
+    border: 1px solid;
 }
 
 .fas{
