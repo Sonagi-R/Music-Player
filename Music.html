@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Music.css" />
+    <title>Music</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="content audioPic" id="audioPic">
+        <div class="circle"></div>
+        <audio id="nhk">
+          <source id="nhk1" src="NHK Sunny side/01 - Ana no wa Makkuro ke.mp3" type="audio/mpeg" title="Ana no wa Makkuro ke" />
+          <source id="nhk2" src="NHK Sunny side/02 - Nippon Bikikomori Kyoukai no Theme.mp3" type="audio/mpeg" title="Nippon Bikikomori Kyoukai no Theme" />
+          <source id="nhk3" src="NHK Sunny side/03 - Puzzle -extra hot mix-.mp3" type="audio/mpeg" title="Puzzle - extra hot mix" />
+          <source id="nhk4" src="NHK Sunny side/04 - Himitsu no Sen wo Hiku Yatsura.mp3" type="audio/mpeg" title="Himitsu no Sen wo Hiku Yatsura" />
+          <source id="nhk5" src="NHK Sunny side/05 - Omae to Ore no Enjou Douro.mp3" type="audio/mpeg" title="Omae to Ore no Enjou Douro" />
+          <source id="nhk6" src="NHK Sunny side/06 - Kimi no Corona ni Tsutsumaretai.mp3" type="audio/mpeg" title="Kimi no Corona ni Tsutsumaretai" />
+        </audio>
+      </div>
+      <h1 id="trackName">Track Name</h1>
+      <h2 id="artistName">artist Name</h2>
+      <div class="progressBar" id="progress"></div>
+      <input class="volumeSlider" id="volumeSlider" type="range" min="9" max="100" value="50" steo="1" />
+      <div class="buttons">
+        <button id="prev" class="action-btn backward"><i class="fas fa-backward fa-3x"></i></button>
+        <button id="play" class="action-btn play"><i class="fas fa-play fa-3x"></i></button>
+        <button id="next" class="action-btn forward"><i class="fas fa-forward fa-3x"></i></button>
+      </div>
+      <button id="trackChange" class="action-btn trackChange">Track Change</button>
+    </div>
+
+    <audio id="aria">
+      <source id="aria1" src="Aria ost/01 - Neo Venezia no Suisaiga.mp3" type="audio/mpeg" title="Neo Venezia no Suisaiga" />
+      <source id="aria2" src="Aria ost/02 - Euforia -TV SIZE-.mp3" type="audio/mpeg" title="Euforia" />
+      <source id="aria3" src="Aria ost/03 - Natsu no Yousei.mp3" type="audio/mpeg" title="Natsu no Yousei" />
+      <source id="aria4" src="Aria ost/04 - Unga wa Meguru.mp3" type="audio/mpeg" title="Unga wa Meguru" />
+      <source id="aria5" src="Aria ost/05 - Santa Claus no Sora he _Riverside Christmas Mix_.mp3" type="audio/mpeg" title="Santa Claus no Sora he Riverside Christmas Mix" />
+      <source id="aria6" src="Aria ost/06 - Nyuudougumo no Shita de.mp3" type="audio/mpeg" title="Nyuudougumo no Shita de" />
+    </audio>
+    <script src="Music.js"></script>
+  </body>
+</html>

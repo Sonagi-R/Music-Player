@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184,40,112);
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+.player{
+    width: 25vw;
+    height: 80vh;
+    border: 1px solid thistle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h1{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 1.5rem;
+    max-height: 10%;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    padding-top: 0.4rem;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #EB2045;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content{
+    width: 18vw;
+    height: 36vh;
+    margin: 0;
+    border-radius: 50%;
+    margin: 50px;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar{
+    height: 7px;
+    width: 90%;
+    background-color: lightgrey;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-radius: 999px;
+    animation-play-state: running;
+}
+
+.active{
+    background: linear-gradient(to right, lightgrey 50%, #EB2045 50%) left;
+    background-size: 200% 100%;
+    background-position: -100% 0;
+    transition: all 242s ease-out;
+}
+
+.buttons{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    background: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border: none;
+
+}
+
+.circle{
+position: absolute;
+width: 5vh;
+height: 5vh;
+background-color: white;
+border: 1px solid black;
+border-radius: 100%;
+}
+
+.audioPic{
+    background-image: url("NHK\ OST.jpg");
+    background-size: cover;
+}
+
+.trackChange{
+    width: 120px; 
+    margin-left: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+.fas{
+    color: black
+}
+
