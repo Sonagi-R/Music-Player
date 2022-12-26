@@ -14,9 +14,9 @@ const progress = document.querySelector('#progress')
 
 const volume = document.querySelector('#volumeSlider')
 
-const nhk = document.getElementById('nhk')
+const fishmans = document.getElementById('fishmans')
 const aria = document.getElementById('aria')
-let track = nhk
+let track = fishmans
 track.volume = 0.5
 
 let trackNumber = 1
@@ -95,7 +95,7 @@ trackChange.addEventListener('click', () => {
     rotation = 0
     track.pause();
     pauseToPlay();
-    if (track == nhk) {
+    if (track == fishmans) {
         track = aria
         cdImage.style.backgroundImage = 'url("Aria-OST.jpg")'
         trackNumber = 1
@@ -103,20 +103,20 @@ trackChange.addEventListener('click', () => {
         prevTrack = `${track.id}${trackNumber - 1}.src`
         nameChange();
     } else {
-        track = nhk
+        track = fishmans
         trackNumber = 1
-        cdimage.style.backgroundImage = 'url("NHK\ OST.jpg")'
+        cdImage.style.backgroundImage = 'url("Cover.jpg")'
         nextTrack = `${track.id}${trackNumber + 1}.src`
         prevTrack = `${track.id}${trackNumber - 1}.src`
-        NameChange();
+        nameChange();
     }
     track.load()
 })
 
 function nameChange() {
-    if (track == nhk) {
-        trackName.innerHTML = eval(`nhk${trackNumber}`).title
-        artistName.innerHTML = "NHK Sunnyside"
+    if (track == fishmans) {
+        trackName.innerHTML = eval(`fishmans${trackNumber}`).title
+        artistName.innerHTML = "Fishmans - Uchu Nippon Setagaya"
     } else {
         trackName.innerHTML = eval(`aria${trackNumber}`).title
         artistName.innerHTML = "Aria The Animation OST"
